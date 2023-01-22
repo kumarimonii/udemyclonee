@@ -1,0 +1,40 @@
+.container {
+    padding: 2px 16px;
+    background-color: #f1f1f1;
+  }
+
+  .promo {
+    background:rgb(199, 13, 13);
+    padding: 3px;
+  }
+
+  .expire {
+    color:black;
+    font-size: medium;
+  }
+
+  label {
+    display: block;
+  }
+
+  .label-class {
+    display: block;
+  }
+  .modal-title{
+    text-align: center!important;
+    color:red;
+    margin:1%;
+  }
+  .col-lg-7 {
+    height: 50vh;
+    max-height: 50vh;
+    /* border: 1px solid #ddd; */
+    overflow-y: scroll;
+  } 
+  .heading{
+    text-align:center;
+    color:black;
+  }
+  /* .span{
+  font-variant-numeric: diagonal-fractions;
+  } */

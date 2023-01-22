@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login Page</title>
+</head>
+<style>
+  /* General styles */
+body {
+  font-family: Arial, sans-serif;
+  padding: 30px;
+
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* height: 100vh; 100% of viewport height */
+}
+form {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+form label {
+  font-weight: bold;
+  margin-bottom: 10px;
+  display: block;
+}
+
+form input {
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  width: 100%;
+}
+
+form input[type="button"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* Specific styles for login and signup pages */
+.signup-page {
+  text-align: center;
+}
+
+.signup-page h2 {
+  margin-bottom: 50px;
+  font-size: 36px;
+}
+
+.login-page {
+  text-align: center;
+}
+
+.login-page h2 {
+  margin-bottom: 50px;
+  font-size: 36px;
+}
+.text{
+    text-align: center;
+    color:red;
+    font-size: 50px;
+}
+.text1{
+    text-align: center;
+    color:rgb(89, 30, 184);
+    font-size: 50px;
+}
+.text4{
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+</style>
+<body>
+  <h2 class="text">Welcome to world's biggest learning platflorm</h2>
+    <h3 class="text1">Udemy Signin Page</h3>
+<div class="container">
+<form>
+  <h2 class="text4">login</h2>
+  Email: <input type="email" id="email"><br>
+  Password: <input type="password" id="password"><br>
+  <input type="button" value="Login" onclick="login()">
+</form> 
+</div>
+<script>
+function login() {
+  var email = document.getElementById("email").value;
+  var password = document.getElementById("password").value;
+  var storedEmail = localStorage.getItem("email");
+  var storedPassword = localStorage.getItem("password");
+  
+  if (email === storedEmail && password === storedPassword) {
+    window.location.href = "index.html";
+  } else {
+    alert("Incorrect email or password. Please try again.");
+  }
+}
+</script>
+
+</body>
+</html>
